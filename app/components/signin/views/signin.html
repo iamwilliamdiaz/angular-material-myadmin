@@ -1,0 +1,46 @@
+<div class="page-signin">
+    <div class="signin-header">
+        <div class="container text-center">
+            <section class="logo">
+                <a href="#/">
+
+                </a>
+            </section>
+        </div>
+    </div>
+    <div class="main-body">
+        <div class="container">
+            <div class="form-container" id="signin-container">
+                <br/>
+                <form class="form-horizontal">
+                    <fieldset>
+                        <div class="form-group">
+                            <md-input-container md-no-float>
+                                <md-icon md-svg-src="dist/img/icons/ic_person_24px.svg"></md-icon>
+                                <input ng-model="user.email" type="text" placeholder="Name">
+                            </md-input-container>
+                        </div>
+                        <div class="form-group">
+                            <md-input-container class="md-primary" md-no-float>
+                                <md-icon md-svg-src="dist/img/icons/ic_lock_24px.svg"></md-icon>
+                                <input ng-model="user.password" type="password"
+                                       placeholder="Password">
+                            </md-input-container>
+                        </div>
+                        <div class="form-group">
+                        </div>
+                        <div class="form-group">
+                            <md-button
+                                    class="btn-width-large btn-block btn-lg md-primary md-raised"
+                                    ng-click="doLogin()">Sign in</md-button>
+                        </div>
+                    </fieldset>
+                </form>
+                <section>
+                    <p class="text-center"><a href="#">Forgot your password? </a></p>
+                </section>
+                <br/>
+            </div>
+        </div>
+    </div>
+</div>

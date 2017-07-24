@@ -1,0 +1,92 @@
+
+.small-box-icon {
+  position: relative;
+  min-height: 100px;
+  padding: 20px;
+  margin: 0px auto;
+  display: table;
+
+}
+
+.box-header {
+  position: inherit;
+  left: 10px;
+}
+
+.box-header-icon {
+  text-align: left;
+  float: left;
+  top: 9px;
+  position: relative;
+  right: 0;
+}
+
+.box-header-icon md-icon.material-icons {
+  color: #525252;
+}
+
+.box-header-label {
+  text-align: left;
+  text-indent: 14px;
+  top: 4px;
+  position: relative;
+}
+
+.box-header-days {
+  text-align: left;
+  font-size: 13px;
+  color: #a9a9a9;
+  text-indent: 15px;
+}
+
+.box-content {
+  text-align: left;
+}
+
+.box-content-label {
+  font-size: 41px;
+  font-family: sans-serif;
+  font-weight: 100;
+  width: 100px;
+  top: 103px;
+  position: absolute;
+  left: 42px;
+  text-align: center;
+}
+
+#current-tasks {
+  position: relative;
+  top: 7px;
+}
+
+#tasks-completed {
+  position: relative;
+  top: 7px;
+}
+
+#tasks-remaining {
+  position: relative;
+  top: 7px;
+}
+
+#tasks-pending {
+  position: relative;
+  top: 7px;
+}
+
+md-content {
+  display: block;
+  position: relative;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (min-width: 992px) {
+
+  .col-md-3 {
+    width: 25%;
+    background: #fff;
+    border-right: 1px solid #eee;
+    height: auto;
+  }
+}

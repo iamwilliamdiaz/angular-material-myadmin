@@ -1,0 +1,80 @@
+<header class="clearfix md-whiteframe-z1" ng-controller="mainController">
+    <div class="top-nav">
+	  <div layout="row">
+		<div flex="33"  class="search-box">
+		    <form novalidate="novalidate"
+				onsubmit="return false;"
+				class="searchbox top-search-box">
+			  <div role="search" class="top-search-box-wrapper">
+				<input type="search"
+					  name="search"
+					  placeholder="Search"
+					  autocomplete="off"
+					  required="required"
+					  class="top-search-box-input">
+				<button type="submit"
+					  title="Submit your search query."
+					  class="top-search-box-submit">
+				    <md-icon md-font-library="material-icons" class="search-icon">search
+				    </md-icon>
+				</button>
+				<button type="reset"
+					  title="Clear the search query."
+					  class="top-search-box-reset">
+				    <md-icon md-font-library="material-icons" class="reset-icon">reset
+				    </md-icon>
+				    </svg>
+				</button>
+			  </div>
+		    </form>
+		
+		</div>
+		<div flex="33" class="dropdown-box">
+		    <md-input-container>
+			  <md-select ng-model="menuOptions.model"
+				    md-selected-text="getDefault()"
+				    aria-label="Options">
+				<md-optgroup label="Options">
+				    <md-option ng-repeat="opt in menuOptions.availableOptions"
+						ng-model-options="{trackBy: '$value.id'}">{{ opt.name }}
+				    </md-option>
+				</md-optgroup>
+			  </md-select>
+		    </md-input-container>
+		</div>
+		<div flex="33" class="profile-box">
+		    <div layout="columns" layout-align="center center">
+			  <div flex="50"  class="profile-icons-box">
+				
+				<div layout="columns" class="profile-icons">
+				    <div flex="33"  class="profile-icon">
+					  <md-icon md-font-library="material-icons" class="action-icon">
+						date_range
+					  </md-icon>
+				    </div>
+				    <div flex="33"  class="profile-icon">
+					  <md-icon md-font-library="material-icons" class="action-icon">
+						account_circle
+					  </md-icon>
+				    </div>
+				    <div flex="33"  class="profile-icon">
+					  <md-icon md-font-library="material-icons" class="action-icon">list
+					  </md-icon>
+				    </div>
+				</div>
+			  </div>
+			  <div flex="50"  class="profile-avatart-box">
+				<md-list-item>
+				    <span>William Diaz</span>
+				    <img src="/app/assets/images/avatars/willz.png" class="md-avatar">
+			
+				</md-list-item>
+			  </div>
+		    </div>
+		</div>
+	  </div>
+    </div>
+</header>
+
+
+

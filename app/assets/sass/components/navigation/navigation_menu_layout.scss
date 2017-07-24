@@ -1,0 +1,159 @@
+/*
+* Navigation style - normal and md
+*/
+
+#nav-collapse-arrow {
+  width: 100%;
+  height: 44px;
+  line-height: 34px;
+  text-indent: 3px;
+  background: $navigation_background_color;
+  color: #FFF;
+}
+
+md-menu-content.md-default-theme, md-menu-content {
+  background: $navigation_background_color;
+}
+
+#nav-wrapper {
+  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: -blackberry-touch;
+  width: 100%;
+  height: 100%;
+  @include transition(all 0.2s ease-in-out);
+}
+
+#nav-logo {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100px;
+  background: $navigation_logo_background_color;
+}
+
+#nav-logo span {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  line-height: 90px;
+  font-size: 40px;
+  font-family: 'Hind', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  color: $navigation_logo_text_color;
+}
+
+#right-nav-section {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100px;
+  background: $navigation_right_section_background_color;
+}
+
+#right-nav-section span {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  line-height: 90px;
+  font-size: 16px;
+  font-family: 'Hind', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  color: $navigation_logo_text_color;
+}
+
+
+md-toolbar .nav-logo {
+
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  font-size: inherit;
+  min-height: 50px;
+  display: block;
+
+  .md-toolbar {
+    max-height: 50px;
+    height: 50px;
+    font-size: 14px;
+    background: $navigation_background_color;
+    h3 {
+      font-size: 14px;
+    }
+  }
+
+}
+
+md-menu-item.active.open .material-icons {
+  color: #fff;
+}
+
+md-icon.material-icons {
+  color: #aeaeb0;
+  font-size: 30px;
+  line-height: 20px;
+}
+
+md-menu-item {
+  color: #aeaeb0;
+}
+
+md-menu-item.active.open {
+  background: #656c7e;
+  color: #fff;
+}
+
+md-menu-item > .md-button span {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+md-toolbar .nav-logo {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  font-size: inherit;
+  min-height: 50px;
+  display: block;
+
+  .md-toolbar {
+    max-height: 50px;
+    height: 50px;
+    font-size: 14px;
+    background: $navigation_background_color;
+    h3 {
+      font-size: 14px;
+    }
+  }
+
+}
+
+md-sidenav {
+  box-sizing: border-box;
+  position: absolute;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  z-index: 60;
+  width: auto;
+  max-width: auto;
+  bottom: 0;
+  overflow: auto;
+}
+
+md-backdrop.md-opaque {
+  opacity: 0;
+}
+
+
+@media (min-width: 960px) {
+
+  md-menu-content {
+    min-width: 96px;
+    min-height: 760px;
+  }
+
+}

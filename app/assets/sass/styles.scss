@@ -1,0 +1,57 @@
+/*
+* Import all styling to be exported to dist folder with grunt
+*/
+/* Contains the settings for the theme collors */
+@import "settings/colors";
+
+/* Contains the mixins for the theme */
+@import "partials/arrow";
+@import "partials/helpers";
+@import "partials/animations";
+
+/* Customization for the browser scrollbar */
+@import "base/scrollbar";
+/* Contains all buttons styling, including Angular Material design buttons md-button */
+@import "base/buttons";
+/* Contains styling on panel contents */
+@import "base/panels";
+/* Contains styling on material design toolbar */
+@import "base/toolbar";
+//
+/* Contains styling on cards */
+@import "base/cards";
+
+/* Contains styling for flot charts */
+@import "components/charts/circle_progress";
+
+/* Contains styling for the page (overral layout) */
+@import "components/layout/body";
+
+/* Contains styling for top header menus (submenus in header) */
+@import "components/layout/header";
+
+/* Contains styling for breadcrumbs */
+@import "components/navigation/breadcrumbs";
+
+/* Contains styling for left menu */
+@import "components/navigation/navigation_menu_layout";
+
+/* Contains styling for left menu */
+@import "components/navigation/navigation_menu-left";
+
+/* Contains styling for right menu */
+@import "components/navigation/navigation_menu-right";
+
+/* Contains styling for 404 and error pages */
+@import "components/pages/error";
+
+/* Contains styling for tasks page */
+@import "components/pages/tasklist";
+
+/* Contains styling for Sign in page */
+@import "components/pages/signin";
+
+/* Contains styling for Sign in page */
+@import "components/pages/dashboard";
+
+

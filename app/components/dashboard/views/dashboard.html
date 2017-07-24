@@ -1,0 +1,183 @@
+<md-content layout-padding>
+    
+    <!-- Breadcrumbs -->
+    <div class="region-breadcrumbs">
+	  
+	  
+	  <md-subheader id="nav-right-arrow">
+		<div layout="row">
+		    <div flex="90">
+			  <ol class="breadcrumb">
+				<li class="active">Dashboard</li>
+			  </ol>
+		    </div>
+		    <div flex="10">
+			  
+			  <md-button class="nav-container-right-button"
+				    ng-click="openRightMenu()">
+				<md-icon class="menu-right-arrow" md-font-library="material-icons">
+				    keyboard_arrow_left
+				</md-icon>
+			  </md-button>
+		    
+		    </div>
+		</div>
+	  </md-subheader>
+    
+    
+    </div><!-- end Breadcrumbs -->
+    
+    
+    <section layout="row" flex="" ng-init="initDashboard()">
+	  
+	  <div class="row" flex="flex">
+		<div class="col-md-3">
+		    
+		    <md-content>
+			  <div class="small-box-icon text-center">
+				<div class="box-header">
+				    <div class="box-header-icon">
+					  <md-icon md-font-library="material-icons">assignment_turned_in
+					  </md-icon>
+				    </div>
+				    <div class="box-header-label">Completed</div>
+				    <div class="box-header-days">last 7 days</div>
+				</div>
+				<div class="box-content">
+				    <circle-progress circle-size="completedTasksSize"
+						circle-value="completedTasksValue"
+						circle-gradient="completedTasksGradient"
+						circle-id="completedTasksID"></circle-progress>
+				</div>
+			  </div>
+		    
+		    
+		    </md-content>
+		
+		</div>
+		<div class="col-md-3">
+		    
+		    <md-content>
+			  <div class="small-box-icon text-center">
+				<div class="box-header">
+				    <div class="box-header-icon">
+					  <md-icon md-font-library="material-icons">assignment_late</md-icon>
+				    </div>
+				    <div class="box-header-label">Pending</div>
+				    <div class="box-header-days">last 7 days</div>
+				</div>
+				<div class="box-content">
+				    <circle-progress circle-size="pendingTasksSize"
+						circle-value="pendingTasksValue"
+						circle-gradient="pendingTasksGradient"
+						circle-id="pendingTasksID"></circle-progress>
+				</div>
+			  </div>
+		    </md-content>
+		
+		
+		</div>
+		
+		<div class="col-md-3">
+		    
+		    
+		    <md-content>
+			  <div class="small-box-icon text-center">
+				<div class="box-header">
+				    <div class="box-header-icon">
+					  <md-icon md-font-library="material-icons">book</md-icon>
+				    </div>
+				    <div class="box-header-label">Placeholder</div>
+				    <div class="box-header-days">last 7 days</div>
+				</div>
+				<div class="box-content">
+				    <circle-progress circle-size="remainingTasksSize"
+						circle-value="remainingTasksValue"
+						circle-gradient="remainingTasksGradient"
+						circle-id="remainingTasksID"></circle-progress>
+				</div>
+			  </div>
+		    </md-content>
+		
+		
+		</div>
+		
+		<div class="col-md-3">
+		    
+		    <md-content>
+			  <div class="small-box-icon text-center">
+				<div class="box-header">
+				    <div class="box-header-icon">
+					  <md-icon md-font-library="material-icons">book</md-icon>
+				    </div>
+				    <div class="box-header-label">Placeholder</div>
+				    <div class="box-header-days">last 7 days</div>
+				</div>
+				<div class="box-content">
+				    <circle-progress circle-size="currentTasksSize"
+						circle-value="currentTasksValue"
+						circle-gradient="currentTasksGradient"
+						circle-id="currentTasksID"></circle-progress>
+				</div>
+			  </div>
+		    
+		    
+		    </md-content>
+		
+		</div>
+	  
+	  
+	  </div>
+    
+    
+    </section>
+</md-content><br><br><br><br>
+<md-content>
+    <section class="md-content-section">
+	  
+	  <md-content>
+		<div class="md-content__body">
+		    <div class="table-responsive">
+			  <table class="table">
+				<thead>
+				<tr>
+				    <th>#</th>
+				    <th>Task Name</th>
+				    <th>Completion</th>
+				    <th>Last Modified</th>
+				    <th class="text-center">Action</th>
+				
+				
+				</tr>
+				</thead>
+				<tbody>
+				<tr ng-repeat="task in randomUserTasks track by $index">
+				    <td>{{task.id}}</td>
+				    <td><span class="color-primary"> {{task.task_name}}</span></td>
+				    <td><span class="label"
+						ng-class="{ 'label-success': task.completed === 'true', 'label-warning': task.completed === 'false' }">{{task.completed === 'true' ? 'Completed' : 'Pending'}}</span>
+				    </td>
+				    <td> {{task.date}}</td>
+				    <th class="text-center">
+					  <md-button ng-click="completeTask(task)"
+						    ng-disabled="task.completed === 'true'"
+						    ng-class="{ 'md-gray': task.completed === 'true' }"
+						    class="md-dark md-raised"
+						    md-ripple-size="auto"
+						    aria-label="Complete">{{task.completed === 'true' ?
+										  'Completed' : 'Complete'}}
+					  
+					  </md-button>
+				    </th>
+				
+				</tr>
+				</tbody>
+			  </table>
+		    </div>
+		</div>
+	  </md-content>
+    
+    </section>
+</md-content>
+
+

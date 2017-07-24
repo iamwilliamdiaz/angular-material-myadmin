@@ -1,0 +1,81 @@
+<md-sidenav id="nav-container-left"
+	  class="md-sidenav-left navbar-default"
+	  md-component-id="left"
+	  md-is-locked-open="lockLeft && $mdMedia('gt-xs')">
+    <md-toolbar layout="column" class="main-toolbar md-medium-tall">
+	  <div id="nav-logo">
+		<span>Vonigo</span>
+	  </div>
+    </md-toolbar>
+    <md-content ng-controller="navigationLeftCtrl" class="left-navigation">
+	  <md-subheader id="nav-collapse-arrow">
+		<div layout="row">
+		    <div flex="90"><span class="main-label">MAIN</span></div>
+		    <div flex="10">
+			  <md-icon class="menu-arrow" md-font-library="material-icons">keyboard_arrow_left
+			  </md-icon>
+		    </div>
+		</div>
+	  </md-subheader>
+	  <md-menu-content>
+		<md-menu-item class="active open">
+		    <md-button aria-label="Dashboard" md-prevent-menu-close="md-prevent-menu-close">
+			  <md-icon md-font-library="material-icons">dashboard</md-icon>
+			  <span> Dashboard</span>
+		    </md-button>
+		</md-menu-item>
+		
+		<md-menu-item>
+		    <md-button aria-label="Tasks" md-prevent-menu-close="md-prevent-menu-close">
+			  <md-icon md-font-library="material-icons">dns</md-icon>
+			  <span> Menu Label</span>
+		    </md-button>
+		</md-menu-item>
+		
+		<md-menu-item>
+		    <md-button aria-label="Tasks" md-prevent-menu-close="md-prevent-menu-close">
+			  <md-icon md-font-library="material-icons">donut_small</md-icon>
+			  <span> Menu Label</span>
+		    </md-button>
+		</md-menu-item>
+		
+		<md-menu-item>
+		    <md-button aria-label="Tasks" md-prevent-menu-close="md-prevent-menu-close">
+			  <md-icon md-font-library="material-icons">camera_enhance</md-icon>
+			  <span> Menu Label</span>
+		    </md-button>
+		</md-menu-item>
+		
+		<md-menu-item>
+		    <md-button aria-label="Tasks" md-prevent-menu-close="md-prevent-menu-close">
+			  <md-icon md-font-library="material-icons">event_seat</md-icon>
+			  <span> Menu Label</span>
+		    </md-button>
+		</md-menu-item>
+		
+		<md-menu-item>
+		    <md-button aria-label="Tasks" md-prevent-menu-close="md-prevent-menu-close">
+			  <md-icon md-font-library="material-icons">group_work</md-icon>
+			  <span> Menu Label</span>
+		    </md-button>
+		</md-menu-item>
+		
+		<md-menu-item>
+		    <md-button aria-label="Tasks" md-prevent-menu-close="md-prevent-menu-close">
+			  <md-icon md-font-library="material-icons">language</md-icon>
+			  <span> Menu Label</span>
+		    </md-button>
+		</md-menu-item>
+		
+		<md-menu-item>
+		    <md-button aria-label="Tasks" md-prevent-menu-close="md-prevent-menu-close">
+			  <md-icon md-font-library="material-icons">lightbulb_outline</md-icon>
+			  <span> Menu Label</span>
+		    </md-button>
+		</md-menu-item>
+	  
+	  </md-menu-content>
+    </md-content>
+</md-sidenav>
+
+

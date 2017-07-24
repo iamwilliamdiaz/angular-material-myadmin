@@ -1,0 +1,66 @@
+/*
+* Navigation style - md
+*/
+
+md-sidenav.md-sidenav-left {
+  position: absolute;
+  background: #2c2e33;
+  width: 270px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-box-shadow: 0 0px 0px 0 rgba(0, 0, 0, .06);
+  -moz-box-shadow: 0 0px 0px 0 rgba(0, 0, 0, .06);
+  -ms-box-shadow: 0 0px 0px 0 rgba(0, 0, 0, .06);
+  -o-box-shadow: 0 0px 0px 0 rgba(0, 0, 0, .06);
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, .06);
+  min-height: 1600px;
+}
+
+md-sidenav.md-locked-open, md-sidenav.md-locked-open-add, md-sidenav.md-locked-open-remove, md-sidenav.md-locked-open-remove.md-closed, md-sidenav.md-locked-open.md-closed, md-sidenav.md-locked-open.md-closed.md-sidenav-left, md-sidenav.md-locked-open.md-closed.md-sidenav-right {
+  position: absolute;
+}
+
+md-sidenav.md-sidenav-left .md-subheader .md-subheader-inner {
+  display: block;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+
+
+md-sidenav.md-sidenav-left md-icon.menu-arrow.material-icons {
+  right: 15px;
+  position: relative;
+  background: #444852;
+  height: 52px;
+  width: 38px;
+  line-height: 50px;
+  color: #fff;
+}
+
+md-sidenav.md-sidenav-left .main-label {
+  font-size: 13px;
+  color: #777;
+  bottom: 0px;
+  display: block;
+  text-indent: 20px;
+  position: absolute;
+}
+
+
+md-sidenav.md-sidenav-left .menu-arrow {
+  //padding-left: 20px;
+  //line-height: 20px;
+}
+
+@media (min-width: 0px) and (max-width: 400px) {
+  md-sidenav.md-sidenav-left {
+    left: 0;
+    width: 0px;
+  }
+}
+

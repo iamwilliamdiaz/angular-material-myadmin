@@ -1,0 +1,25 @@
+<md-sidenav id="nav-container-right"
+	  class="md-sidenav-right  md-whiteframe-4dp"
+	  md-component-id="right"
+	  md-disable-backdrop="true"
+	  layout="column">
+    <md-toolbar layout="column" class="main-toolbar md-medium-tall">
+	  <md-button class="nav-container-right-button-open"
+		    ng-click="openRightMenu()">
+	  
+		<md-icon class="menu-right-arrow" md-font-library="material-icons">
+		    keyboard_arrow_right
+		</md-icon>
+	  </md-button>
+	  <div id="right-nav-section">
+		<span>Right Menu</span>
+	  </div>
+
+    </md-toolbar>
+    <md-content layout-padding ng-controller="navigationRightCtrl">
+	  <md-list-item>
+		<img src="/app/assets/images/placeholder.jpg">
+	  </md-list-item>
+    </md-content>
+</md-sidenav>
+
